@@ -66,7 +66,7 @@ def topk_performance(model,n_topk,x_train,y_train,x_test,y_test,yencoder):
 def best_topk_model(topk_models,n_topk,x_train,y_train,x_test,y_test,yencoder):
     model_prob_max, accuracy_max, best_model = 0., 0., ''
     for i in range(len(topk_models)):
-        topk_performance(topk_models[i],n_topk,x_train,y_train,x_test,y_test,yencoder)
+        y_pred, p_res, class_sort, prob_sort = topk_performance(topk_models[i],n_topk,x_train,y_train,x_test,y_test,yencoder)
         if p_res[n_topk][1] > accuracy_max:
             accuracy_max = p_res[n_topk][1]
             model_prob_max = p_res
