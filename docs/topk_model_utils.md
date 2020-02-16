@@ -47,4 +47,42 @@ Returns: y_pred, p_res, class_sort, prob_sort
 
 def best_topk_model(topk_models,n_topk,x_train,y_train,x_test,y_test,yencoder) 
 
-Computes the best model based on top-k accuracy results.
+This function uses the topk_performance function above to compute Top-k accuracy measurements for different models and then selects the best performing model.
+
+Example: see solar_radiation_example1 under topk_classification
+
+    topk_models: model object list
+    Models that return prediction probabilities for each class
+
+    n_topk: integer
+    number of Top-k classes to predict
+
+    x_train: dataframe
+    x data (attributes) to train on
+
+    y_train: dataframe
+    target values to train on
+
+    x_test: dataframe
+    x data (attributes) to test the model
+
+    y_test: dataframe
+    target values to test the model
+
+    yencoder: function
+    encoder used to transform target values to classes
+
+
+Returns: y_pred, p_res, class_sort, prob_sort
+
+    y_pred: numpy.ndarray
+    Top-k predictions of target valaues
+
+    p_res: numpy.ndarray
+    prediction probabilities for each of the Top-k classes
+
+    class_sort: numpy.ndarray
+    Top-k class predictions of target valaues in categorical form
+
+    prob_sort: Top-k accuracy measurements
+    PPVs for each class from best to worst as well as Top-k accuracy
