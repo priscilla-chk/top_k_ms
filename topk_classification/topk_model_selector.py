@@ -65,14 +65,14 @@ def topk_performance(model,n_topk,x_train,y_train,x_test,y_test,yencoder):
 
 def best_topk_model(topk_models,n_topk,x_train,y_train,x_test,y_test,yencoder):
     """
-    This function uses the topk_performance function above to compute Topk accuracy measurements for different models and then
-    select the best performing model.
+    This function uses the topk_performance function above to compute Top-k accuracy measurements for different models and then
+    selects the best performing model.
     
     Parameters
     ..........
     
     topk_models: model object list
-    any model that returns prediction probabilities for each class
+    Models that return prediction probabilities for each class
     
     n_topk: integer
     number of Top-k classes to predict
