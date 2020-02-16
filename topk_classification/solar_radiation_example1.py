@@ -2,13 +2,13 @@
 # coding: utf-8
 
 
-from numpy import*
+from numpy import *
 import pandas as pd
 import matplotlib.pyplot as plt
 import missingno as ms
 
 ##Import topk classification module
-from 
+from topk_model_selector import *
 
 ##For machine learning purposes
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder, KBinsDiscretizer
@@ -21,18 +21,17 @@ from sklearn import metrics
 
 
 solardata = pd.read_csv('SolarPrediction.csv', parse_dates=['Data'])
-#solardata.set_index('UNIXTime', inplace=True)
 solardata['Date_s'] = pd.to_timedelta(solardata['Data']).dt.total_seconds().astype('float')
 solardata['Time_s'] = pd.to_timedelta(solardata['Time']).dt.total_seconds().astype('float')
 solardata['TimeSunRise_s'] = pd.to_timedelta(solardata['TimeSunRise']).dt.total_seconds().astype('float')
 solardata['TimeSunSet_s'] = pd.to_timedelta(solardata['TimeSunSet']).dt.total_seconds().astype('float')
 solardata = solardata.drop(['UNIXTime','Data','Time','TimeSunRise','TimeSunSet'],axis=1)
-solardata.head(5)
+print(solardata.head(5))
 
 #ms.matrix(solardata)
 print(solardata.info())
-solardata.shape
-solardata.describe()
+print(solardata.shape)
+print(solardata.describe())
 
 ax1=pd.plotting.scatter_matrix(solardata, figsize=(8,8))
 n = len(solardata.select_dtypes(include=['number']).columns)
