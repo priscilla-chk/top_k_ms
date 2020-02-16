@@ -5,6 +5,8 @@ def topk_performance(model,n_topk,x_train,y_train,x_test,y_test,yencoder):
 
 This function computes Top-k performance results based on the given model and the train and test data. The function trains on the x data and the target value, and then runs the model on the test data. It selects k possible matches which have the highest probability of being a match. It then computes the positive prediction value (PPV) for each class, from worst to best, as well as the Top-k accuracy, where the model is considered a success if the the target class is one of the k matches selected by the model. Therefore, Top-k accuracy will have the highest probabiity because it includes all three classes. PPVs are calculated by by adding all the instances where the prediction was correct divided by the total number of predictions.
 
+Example: see solar_radiation_example1 under topk_classification
+
     model: model object
     any model that returns prediction probabilities for each class
 
