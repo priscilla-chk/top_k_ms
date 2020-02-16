@@ -8,6 +8,30 @@ def topk_performance(model,n_topk,x_train,y_train,x_test,y_test,yencoder):
     matches selected by the model. Therefore, Top-k accuracy will have the highest probabiity because it includes all three
     classes. PPVs are calculated by by adding all the instances where the prediction was correct divided by the total number
     of predictions.
+    
+    Parameters
+    ..........
+    
+    model: model object
+    any model that returns prediction probabilities for each class
+
+    n_topk: integer
+    number of Top-k classes to predict
+
+    x_train: dataframe
+    x data (attributes) to train on
+
+    y_train: dataframe
+    target values to train on
+
+    x_test: dataframe
+    x data (attributes) to test the model
+
+    y_test: dataframe
+    target values to test the model
+
+    yencoder: function
+    encoder used to transform target values to classes
     """
 
     model.fit(x_train,y_train)
