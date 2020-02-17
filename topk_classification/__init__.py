@@ -1,5 +1,10 @@
 import warnings
 
+##include multiple packages together
+#from .preprocessing import one_hot_encoder
+#from .preprocessing import scale_data
+#from .makedata import preprocess_data
+
 # Version
 __version__ = '0.2.0'
 
