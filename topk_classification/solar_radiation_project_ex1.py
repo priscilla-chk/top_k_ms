@@ -68,7 +68,7 @@ y_test_trans = yencoder.transform(y_test)
 
 print(x_train_trans.shape, x_test_trans.shape)
 
-##No. of matches 
+##No. of Top-k matches 
 n_pred = 2
 
 m1 = KNeighborsClassifier(n_neighbors=7)
