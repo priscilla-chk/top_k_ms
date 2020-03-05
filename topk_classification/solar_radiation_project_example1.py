@@ -2,9 +2,9 @@
 # coding: utf-8
 
 ###########################################################################################################
-""
+"""
 Predict the level of solar radiation based on variables such as temperature, pressure, wind direction, etc.
-""
+"""
 ###########################################################################################################
 
 from numpy import *
