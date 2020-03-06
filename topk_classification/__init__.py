@@ -1,16 +1,11 @@
 import warnings
 
-##include multiple packages together
-#from .preprocessing import one_hot_encoder
-#from .preprocessing import scale_data
-#from .makedata import preprocess_data
-
 # Version
-__version__ = '0.2.0'
+__version__ = '0.0.1'
 
 # Check for dependencies
 hard_dependencies = [
-    'numpy', 'pandas', 'matplotlib', 'sklearn'
+    'numpy', 'pandas', 'sklearn'
 ]
 missing_dependencies = []
 
