@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 ###########################################################################################################
 """
 Predict the level of solar radiation based on variables such as temperature, pressure, wind direction, etc.
@@ -13,7 +10,7 @@ import matplotlib.pyplot as plt
 import missingno as ms
 
 ##Import my Top-k classification module
-from topk_model_selector import *
+from topk_classification import *
 
 ##For machine learning purposes
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder, KBinsDiscretizer
