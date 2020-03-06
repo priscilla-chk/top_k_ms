@@ -16,9 +16,9 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GNU General Public License v3.0",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    install_requires=['numpy','pandas'],
+    install_requires=['numpy','pandas','scikit-learn'],
 )
