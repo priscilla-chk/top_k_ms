@@ -10,9 +10,9 @@ Documentation can be found on https://github.com/priscilla-chk/top_k_models/
 
 # Installation
 
-topk_classification can be installed by running setup.py in the top_k_models folder:
+topk_classification can be installed directly from pip:
   
-  * python setup.py install
+  * pip install topk_classification
   
 
 # Dependencies
