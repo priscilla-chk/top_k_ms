@@ -10,5 +10,8 @@ Documentation can be found on https://github.com/priscilla-chk/top_k_models/
 
 topk_classification can be installed by running:
 
+  {python setup.py install}
+  
+
 ## Dependencies
 numpy, pandas, sklearn
