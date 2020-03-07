@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import missingno as ms
 
 ##Import my Top-k classification module
-from topk_classification import *
+from top_k_models.classification import *
 
 ##For machine learning purposes
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder, KBinsDiscretizer
