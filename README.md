@@ -1,4 +1,4 @@
-# Top-k Classification
+# Top-k Models
 
 A python data tool that predicts that top k classes of a dataset, calculates the Top-k accuracy for different models and selects the best classifier.
 
@@ -10,9 +10,9 @@ Documentation can be found on https://github.com/priscilla-chk/top_k_models/
 
 # Installation
 
-topk_classification can be installed directly from pip/pip3:
+top_k_models can be installed directly from pip/pip3:
   
-  * pip install topk_classification
+  * pip install top_k_models
   
 
 # Dependencies
