@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 p_version = "0.0.1"
 
 setuptools.setup(
-    name="topk_classification", 
+    name="top_k_models", 
     version=p_version,
     author="Priscilla Chauke",
     author_email="priscilla.chk@gmail.com",
