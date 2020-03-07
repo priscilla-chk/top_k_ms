@@ -45,7 +45,8 @@ for x in range(n):
         ax.xaxis.label.set_rotation(90)
         ax.yaxis.label.set_rotation(0)
         ax.yaxis.labelpad = 50
-plt.show()
+#plt.show()
+plt.savefig('corner.png')
 
 ##Divide solar radiation data into 4 radiation levels
 solardata['solar_radiation'] = pd.cut(solardata['Radiation'], bins=4, labels = None)
