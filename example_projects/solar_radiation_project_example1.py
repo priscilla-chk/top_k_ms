@@ -37,7 +37,7 @@ print(solardata.shape)
 print(solardata.describe())
 
 ##Corner plot of column data to see correlations between solar radiation and different variables
-ax1=pd.plotting.scatter_matrix(solardata, figsize=(8,8))
+ax1=pd.plotting.scatter_matrix(solardata, figsize=(15,15))
 n = len(solardata.select_dtypes(include=['number']).columns)
 for x in range(n):
     for y in range(n):
